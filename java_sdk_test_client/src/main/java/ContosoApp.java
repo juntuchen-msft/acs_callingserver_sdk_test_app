@@ -16,7 +16,6 @@ public class ContosoApp {
         String devPMAEndPoint = "https://pma-dev-juntuchen.plat-dev.skype.net";
         String callbackUri = "http://419697f38d85.ngrok.io/OnIncomingCall";
         CommunicationUserIdentifier target = new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000012-2cf7-dbf2-bcc9-3e3a0d009d06");
-        CommunicationUserIdentifier target1 = new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000012-2cf7-ff92-bcc9-3e3a0d009d08");
 
         // Java SDK Initialization
         CallingServerClient callingServerClient = new CallingServerClientBuilder()
@@ -33,9 +32,6 @@ public class ContosoApp {
         targets.add(target);
 
         CallConnection result = callingServerClient.createCall(source, targets, callbackUri, null, null);
-
-//        List<CommunicationIdentifier> addTargets = new ArrayList<CommunicationIdentifier>();
-//        addTargets.add(target1);
-//        result.addParticipants(addTargets, null, null, null);
+        System.out.print(result.getCallConnectionId());
     }
 }
