@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import static spark.Spark.*;
 
@@ -69,10 +68,7 @@ public class App
         post("/api/calls/:contextId", (request, response) -> {
             String contextId = request.params(":contextId");
             List<CallAutomationEventBase> acsEvents = EventHandler.parseEventList(request.body());
-            System.out.println(request.body());
-            if (acsEvents.isEmpty()) {
-                return "";
-            }
+
             for (CallAutomationEventBase acsEvent : acsEvents) {
                 if (acsEvent instanceof CallConnectedEvent) {
                     CallConnectedEvent event = (CallConnectedEvent) acsEvent;
