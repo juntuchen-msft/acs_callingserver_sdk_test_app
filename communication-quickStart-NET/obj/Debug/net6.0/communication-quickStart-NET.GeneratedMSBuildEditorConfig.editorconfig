@@ -1,0 +1,16 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = communication_quickStart_NET
+build_property.RootNamespace = communication_quickStart_NET
+build_property.ProjectDir = C:\Work\acs_callingserver_sdk_test_app\communication-quickStart-NET\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Work\acs_callingserver_sdk_test_app\communication-quickStart-NET
+build_property._RazorSourceGeneratorDebug = 

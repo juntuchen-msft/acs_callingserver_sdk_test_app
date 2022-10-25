@@ -101,7 +101,7 @@ public class App
 
                         // Invite other participants to the call
                         List<CommunicationIdentifier> participants = new ArrayList<>(
-                                Arrays.asList(new CommunicationUserIdentifier("<ANOTHER_ACS_USER>")));
+                                Arrays.asList(new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000014-affa-33eb-47b4-a43a0d000223")));
                         AddParticipantsOptions options = new AddParticipantsOptions(participants);
                         AddParticipantsResult addParticipantsResult = callConnectionAsync.addParticipants(participants).block();
                     }

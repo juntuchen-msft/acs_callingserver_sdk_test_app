@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "/SgpC+iVvbgPajWxvQcWvja3N3ALyx2ZV1hNVm4qpJI4Oi7RvZJfqIXIB3JbvnzWUdTwLnBk/g5akF50G9m+AA==",
+  "success": true,
+  "projectFilePath": "C:\\Work\\acs_callingserver_sdk_test_app\\communication-quickStart-NET\\communication-quickStart-NET.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juntuchen\\.nuget\\packages\\azure.communication.callautomation\\1.0.0-alpha.20221024.2\\azure.communication.callautomation.1.0.0-alpha.20221024.2.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\azure.communication.common\\1.2.0\\azure.communication.common.1.2.0.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\azure.messaging.eventgrid\\4.12.0-alpha.20221024.1\\azure.messaging.eventgrid.4.12.0-alpha.20221024.1.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\juntuchen\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
