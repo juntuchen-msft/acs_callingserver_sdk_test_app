@@ -46,8 +46,10 @@ public class ActionController {
     public ResponseEntity<?> handleIncomingCall(@RequestBody(required = false) String requestBody) {
         CallAutomationAsyncClient client = new CallAutomationClientBuilder()
                 .connectionString(environment.getProperty("connectionString"))
+                .endpoint("https://pma-dev-fanche.plat-dev.skype.net")
                 .buildAsyncClient();
         List<EventGridEvent> eventGridEvents = EventGridEvent.fromString(requestBody);
+        System.out.println(requestBody);
 
         for (EventGridEvent eventGridEvent : eventGridEvents) {
             // Handle the subscription validation event
@@ -77,8 +79,10 @@ public class ActionController {
     public ResponseEntity<?> handleCallEvents(@RequestBody(required = false) String requestBody, @PathVariable String callerId) {
         CallAutomationAsyncClient client = new CallAutomationClientBuilder()
                 .connectionString(environment.getProperty("connectionString"))
+                .endpoint("https://pma-dev-fanche.plat-dev.skype.net")
                 .buildAsyncClient();
         List<CallAutomationEventBase> acsEvents = EventHandler.parseEventList(requestBody);
+        System.out.println(requestBody);
 
         for (CallAutomationEventBase acsEvent : acsEvents) {
             if (acsEvent instanceof CallConnected) {
@@ -86,7 +90,9 @@ public class ActionController {
 
                 // Call was answered and is now established
                 String callConnectionId = event.getCallConnectionId();
-                PhoneNumberIdentifier target = new PhoneNumberIdentifier(callerId);
+//                PhoneNumberIdentifier target = new PhoneNumberIdentifier(callerId);
+                CommunicationUserIdentifier target = new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000014-da5e-6b21-2207-933a0d000025");
+                System.out.println(event.getCorrelationId());
 
                 // Play audio then recognize 3-digit DTMF input with pound (#) stop tone
                 CallMediaRecognizeDtmfOptions recognizeOptions = new CallMediaRecognizeDtmfOptions(target, 3);
