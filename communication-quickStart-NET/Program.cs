@@ -8,7 +8,8 @@ using System.Text.Json.Nodes;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var client = new CallAutomationClient(builder.Configuration["ACS:ConnectionString"]);
+var pmaEndpoint = new Uri("https://x-pma-euno-01.plat.skype.com");
+var client = new CallAutomationClient(pmaEndpoint, builder.Configuration["ACS:ConnectionString"]);
 var callbackUriBase = "https://juntuchen.ngrok.io"; // i.e. https://someguid.ngrok.io
 
 var app = builder.Build();
@@ -45,6 +46,7 @@ app.MapPost("/api/calls/{contextId}", async (
     foreach (var cloudEvent in cloudEvents)
     {
         CallAutomationEventBase @event = CallAutomationEventParser.Parse(cloudEvent);
+        System.Console.WriteLine(@event.CorrelationId);
         if (@event is CallConnected)
         {
             // play audio then recognize 3-digit DTMF input with pound (#) stop tone
@@ -69,11 +71,11 @@ app.MapPost("/api/calls/{contextId}", async (
                 .AddParticipantsAsync(new AddParticipantsOptions(
                     new List<CommunicationIdentifier>()
                     {
-                        new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000014-affa-33eb-47b4-a43a0d000223")
+                        new CommunicationUserIdentifier("8:acs:816df1ca-971b-44d7-b8b1-8fba90748500_00000014-d9b1-e91e-df68-563a0d003178")
                     }));
         }
     }
     return Results.Ok();
 }).Produces(StatusCodes.Status200OK);
 
-app.Run();
+app.Run("http://localhost:8080");

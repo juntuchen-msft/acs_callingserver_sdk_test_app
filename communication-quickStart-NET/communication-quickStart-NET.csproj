@@ -7,4 +7,9 @@
     <RootNamespace>communication_quickStart_NET</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.Communication.CallAutomation" Version="1.0.0-alpha.20221024.2" />
+    <PackageReference Include="Azure.Messaging.EventGrid" Version="4.12.0-alpha.20221102.1" />
+  </ItemGroup>
+
 </Project>

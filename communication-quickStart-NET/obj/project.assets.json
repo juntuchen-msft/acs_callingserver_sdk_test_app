@@ -59,7 +59,7 @@
           }
         }
       },
-      "Azure.Messaging.EventGrid/4.12.0-alpha.20221024.1": {
+      "Azure.Messaging.EventGrid/4.12.0-alpha.20221102.1": {
         "type": "package",
         "dependencies": {
           "Azure.Core": "1.25.0",
@@ -219,16 +219,16 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Messaging.EventGrid/4.12.0-alpha.20221024.1": {
-      "sha512": "r8X13KuZGvRtqhRO28zaijdjQOW4I7sRwxePweKziP5F6wNv6PrftkNmy+gVoA/Z8ZaX068DI7XJsuj5evZtnw==",
+    "Azure.Messaging.EventGrid/4.12.0-alpha.20221102.1": {
+      "sha512": "TZTulBkk+gPJ6bb/trJeYYx49PEM0QBHd6n5/PLnO4+xYGKGGxaidkK/JQJ4xOTcIxesZQSVQC0G579+zSec2A==",
       "type": "package",
-      "path": "azure.messaging.eventgrid/4.12.0-alpha.20221024.1",
+      "path": "azure.messaging.eventgrid/4.12.0-alpha.20221102.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.messaging.eventgrid.4.12.0-alpha.20221024.1.nupkg.sha512",
+        "azure.messaging.eventgrid.4.12.0-alpha.20221102.1.nupkg.sha512",
         "azure.messaging.eventgrid.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Messaging.EventGrid.dll",
@@ -437,7 +437,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Azure.Communication.CallAutomation >= 1.0.0-alpha.20221024.2",
-      "Azure.Messaging.EventGrid >= 4.12.0-alpha.20221024.1"
+      "Azure.Messaging.EventGrid >= 4.12.0-alpha.20221102.1"
     ]
   },
   "packageFolders": {
@@ -486,7 +486,7 @@
           },
           "Azure.Messaging.EventGrid": {
             "target": "Package",
-            "version": "[4.12.0-alpha.20221024.1, )"
+            "version": "[4.12.0-alpha.20221102.1, )"
           }
         },
         "imports": [
