@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("66d4c278-ea80-476a-a66a-1f86fedf8ce3")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("communication-quickStart-NET")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

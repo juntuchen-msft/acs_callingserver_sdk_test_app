@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>communication_quickStart_NET</RootNamespace>
+    <UserSecretsId>66d4c278-ea80-476a-a66a-1f86fedf8ce3</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
